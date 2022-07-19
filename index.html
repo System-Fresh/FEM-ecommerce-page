@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <title>E-COMMERCE</title>
+</head>
+<body>
+   <section class="header">
+    <div class="left">
+        <div class="close-menu">
+            <img src="images/icon-close.svg" alt="close-menu">
+        </div>
+       <div class="menu-btn">
+        <img src="images/icon-menu.svg" alt="menu" class="menu-btn">
+       </div>
+        
+        <a href="index.html">
+      <img src="images/logo.svg" alt="image of logo" class="logo">
+    </a>
+    <div class="show-overlay"></div>
+      <ul class="menu-list">
+        <li>Collection</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+        
+    </div>
+    <div class="right">
+        <div class="cart-size icon-cart">
+            <div class="cart-no number-cart"></div>
+            <img  src="images/icon-cart.svg" alt="shopping cart logo" class="cart-logo">
+    </div>
+        <img  src="images/image-avatar.png" alt="shopping profile image" class="profile-image">
+    </div>
+</section>
+<hr>
+
+<div class="cart-container">
+  <h3>Cart</h3><hr>
+  <p>Your cart is empty.</p>
+</div>
+<div class="cart-container-buy">
+  <h3>Cart</h3><hr>
+  <div class="little-container">
+    <div class="little-container-grid">
+    <img class="little-img" src="images/image-product-1-thumbnail.jpg" alt="image-1">
+    <p class="autumn">Autumn Limited Edition...</p>
+    <img src="images/icon-delete.svg" alt="delete" class="delete">
+    <p class="result">Lorem 52154 x 526 $45</p>
+    <p class="result-plus">dfdfdf</p>
+  </div>
+    <div class="checkout-up">Checkout</div>
+  </div>
+</div>
+
+
+
+
+<section class="hero">
+    <div class="hero-left-pc">
+            <!-- Images used to open the lightbox -->
+<div class="row">
+    <div class="column" >
+      <img id="imageBox" src="images/image-product-1.jpg" width="450px" onclick="openModal();currentSlide(1)" class="hover-shadow"style="border-radius: 30px;" >
+    </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides" >
+        <div class="numbertext">1 / 4</div>
+        <img src="images/image-product-1.jpg" style="width: 400px; border-radius: 20px;">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="images/image-product-2.jpg" style="width: 400px;  border-radius: 20px;">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="images/image-product-3.jpg" style="width: 400px;  border-radius: 20px;">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="images/image-product-4.jpg" style="width: 400px;  border-radius: 20px;">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)"><img src="images/icon-previous.svg" alt=""></a>
+      <a class="next" onclick="plusSlides(1)"><img src="images/icon-next.svg" alt=""></a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="images/image-product-1-thumbnail.jpg" width="120px"  onclick="currentSlide(1)" alt="image of a show">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="images/image-product-2-thumbnail.jpg" width="120px" onclick="currentSlide(2)" alt="image of a show">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="images/image-product-3-thumbnail.jpg" width="120px" onclick="currentSlide(3)" alt="image of a show">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="images/image-product-4-thumbnail.jpg" width="120px" onclick="currentSlide(4)" alt="image of a show">
+      </div>
+    </div>
+  </div>
+       
+   
+
+
+</div>
+<div class="product-small-img">
+    <img src="images/image-product-1.jpg" onclick="myFunction(this)" alt="">
+    <img src="images/image-product-2.jpg" onclick="myFunction(this)" alt="">
+    <img src="images/image-product-3.jpg" onclick="myFunction(this)" alt="">
+    <img src="images/image-product-4.jpg" onclick="myFunction(this)" alt="">
+</div>
+    </div>
+
+    <div class="hero-left-mobile">
+        <div class="main-slider">
+        <div class="mobile-slider">
+                <div class="slide-item current">
+                    <img src="images/image-product-1.jpg" alt="image of a shoe">
+                </div>
+                <div class="slide-item">
+                    <img src="images/image-product-2.jpg" alt="image of a shoe">
+                </div>
+                <div class="slide-item">
+                    <img src="images/image-product-3.jpg" alt="image of a shoe">
+                </div>
+                <div class="slide-item">
+                    <img src="images/image-product-4.jpg" alt="image of a shoe">
+                </div>
+            </div>
+            <!-- mobile slide control -->
+            <div class="left-slider"><img src="images/icon-previous.svg" alt=""></div>
+            <div class="right-slider"><img src="images/icon-next.svg" alt=""></div>
+        </div>
+    </div>
+
+
+    <div class="hero-right">
+        <h3 class="top1">sneaker company</h3>
+        <h1 class="fall" id="product-name">
+            Fall Limited Edition <br> Sneakers
+        </h1>
+        <p class="right-text">These low-profile sneakers are your perfect casual wear <br> companion. Featuring a durable rubber outer sole. they'll <br> withstand everything the weather can offer</p>
+
+        <div class="price">
+            <div class="money-percent">
+                <span class="money number">$125.00</span>
+                <span class="percent">50%</span>
+        </div>
+            <p class="money-slash">$250.00</p>
+        </div>
+         
+        <div class="checkout">
+            <div class="plus-minus">
+            <img class="minus" src="images/icon-minus.svg" alt="minus button">
+           <p class="article-number">0</p>
+            <img class="plus" src="images/icon-plus.svg" alt="add button">
+        </div>
+        <div class="add-cart cart-add" id="add-to-cart" >
+            <div class="right-cart">
+                <svg width="18" height="16.363" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 16.363"><path d="M17.121 2.978H3.161L2.953 0.667A0.732 0.732 0 0 0 2.224 0H0.734a0.732 0.732 0 1 0 0 1.466h0.818l0.843 9.395c0.06 0.677 0.425 1.412 1.056 1.911C2.315 14.224 3.354 16.363 5.203 16.363c1.534 0 2.616 -1.53 2.089 -2.98h4.013c-0.525 1.448 0.554 2.98 2.091 2.98a2.225 2.225 0 0 0 2.224 -2.224 2.225 2.225 0 0 0 -2.224 -2.224H5.208c-0.557 0 -1.043 -0.335 -1.252 -0.825l11.717 -0.69a0.732 0.732 0 0 0 0.669 -0.554l1.49 -5.959a0.734 0.734 0 0 0 -0.712 -0.911ZM5.202 14.897a0.757 0.757 0 0 1 0 -1.513 0.757 0.757 0 0 1 0 1.513Zm8.194 0a0.757 0.757 0 0 1 0 -1.513 0.757 0.757 0 0 1 0 1.513Zm1.653 -5.926 -11.292 0.663 -0.467 -5.188h12.889l-1.131 4.525Z" fill="#fff" fill-rule="nonzero"/></svg>
+        </div>
+            <span class="add-cart-text">Add to cart</span>
+        </div>
+
+
+
+        </div>
+      
+
+
+    </div>
+   
+
+</section>
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+   
+</body>
+</html>
